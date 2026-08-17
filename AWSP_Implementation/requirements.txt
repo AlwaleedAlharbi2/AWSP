@@ -1,0 +1,43 @@
+# AWSP++ Requirements
+# Paper: ILP-Grounded Adaptive Weighted Sampling for VM Placement
+# Install with: pip install -r requirements.txt
+
+# Core scientific computing
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+
+# Simulation / optimisation (ILP gap benchmarking)
+# Optional: gurobipy>=11.0.0  (requires Gurobi licence for exact ILP; Section VI-K)
+# Free alternative: use scipy.optimize.milp (included in scipy above)
+
+# Machine learning (for HUNTER / K-RL-VMP baselines, TensorBoard)
+torch==2.3.1
+torchvision==0.18.1
+
+# TensorBoard logging (used in train.py)
+tensorboard==2.17.0
+
+# Visualisation
+matplotlib==3.9.0
+seaborn==0.13.2
+
+# Data download helpers
+requests==2.32.3
+tqdm==4.66.4
+
+# Notebook support
+jupyter==1.0.0
+ipykernel==6.29.5
+ipywidgets==8.1.3
+nbformat==5.10.4
+
+# Utilities
+click==8.1.7
+pyyaml==6.0.1
+
+# Optional: for faster CSV parsing of Google/Azure large traces
+pyarrow==16.1.0
+
+# Optional: CloudSim JVM bridge (requires Java 17)
+# py4j==0.10.9.7
